@@ -12,8 +12,19 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex;
+  align-items: center;
+  gap:1rem;
+  padding:0.25rem 0.5rem;
 }
-
+ul.links {
+  gap:1rem;
+  padding-inline: 0;
+  display: inherit;
+}
+.notifications {
+  margin-left:auto;
+}
 .profile-image {
   background: rebeccapurple;
   box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
