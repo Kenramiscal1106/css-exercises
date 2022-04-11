@@ -4,6 +4,8 @@ body {
   height: 100vh;
   margin: 0;
   overflow: hidden;
+  display: flex;
+  flex-flow: column nowrap;
   font-family: Roboto, sans-serif;
 }
 
@@ -24,4 +26,35 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+.content {
+  flex: 1 0 0;
+  display:flex;
+  flex-flow:column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.header, .footer {
+  display:flex;
+  align-items: center;
+  gap:1.5rem;
+  padding:1rem;
+}
+a {
+  text-decoration: none;
+  color:black;
+}
+a:hover {
+  text-decoration: underline;
+}
+.header > .separator, .footer > .separator {
+  margin-left:auto;
+}
+.footer {
+  background:rgb(235, 235, 235);
+}
+button {
+  padding:0.5rem 1rem;
 }
